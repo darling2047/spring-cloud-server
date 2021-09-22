@@ -29,11 +29,11 @@ public class TestUserApiService implements UserService {
     @Override
     public UserInfo getInfo() {
         log.info("请求的端口为：{}",serverPort);
-        try {
-            Thread.sleep(6000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            Thread.sleep(6000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
         UserInfo user = new UserInfo();
         user.setServerPort(serverPort);
         user.setAddress("杭州市西湖区三墩镇");

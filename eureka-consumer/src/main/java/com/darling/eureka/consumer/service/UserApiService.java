@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.*;
  * @version: 1.0
  * @modified By:
  */
-@FeignClient(name = "EUREKA-PROVIDER")
+@FeignClient(name = "EUREKA-PROVIDER",fallbackFactory = UserClientFallbackFactory.class)
 public interface UserApiService extends UserService{
 
-    @GetMapping("/test/sayHi?name={name}")
+    @GetMapping("/serverApis/test/sayHi?name={name}")
     String sayHi(@PathVariable String name);
 
     /**
@@ -23,7 +23,7 @@ public interface UserApiService extends UserService{
      * @param user
      * @return
      */
-    @GetMapping("/test/insertInfo")
+    @GetMapping("/serverApis/test/insertInfo")
     String insertInfo(@RequestBody User user);
 
 }

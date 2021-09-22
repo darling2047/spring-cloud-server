@@ -11,17 +11,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @version:
  * @modified By:
  */
-@RequestMapping("/serverApis")
+//@RequestMapping("/serverApis")
 public interface UserService {
 
-    @GetMapping("/test")
+    @GetMapping("/serverApis/test")
     UserInfo test();
 
     /**
      * 获取用户信息
      * @return  用户姓名、年龄等信息
      */
-    @GetMapping("/getInfo")
+    @GetMapping("/serverApis/getInfo")
     UserInfo getInfo();
 
 }
