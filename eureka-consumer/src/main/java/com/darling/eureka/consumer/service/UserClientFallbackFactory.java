@@ -44,7 +44,9 @@ public class UserClientFallbackFactory implements FallbackFactory<UserApiService
 
             @Override
             public UserInfo getInfo() {
-                return null;
+                UserInfo userInfo = new UserInfo();
+                userInfo.setServerPort("我被降级啦");
+                return userInfo;
             }
         };
     }
