@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 import java.util.Objects;
 
 /**
- * @description:
+ * @description: 基于htstrix封装的处理feign调用出错的熔断策略工厂
  * @author: dll
  * @date: Created in 2021/9/22 13:06
  * @version:

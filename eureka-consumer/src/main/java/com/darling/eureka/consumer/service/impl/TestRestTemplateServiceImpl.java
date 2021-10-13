@@ -29,6 +29,11 @@ public class TestRestTemplateServiceImpl implements TestRestTemplateService {
         return object;
     }
 
+    /**
+     * 当sayRestHi方法发起远程调用失败时调用本方法
+     * @param name
+     * @return
+     */
     public String sayRestHiCallBack(String name) {
         return "向"+name+"sayRestHi失败啦!";
     }
